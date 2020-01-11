@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "parcel assets/index.html"
+  },
+  "devDependencies": {
+    "elm-hot": "^1.0.1",
+    "node-elm-compiler": "^5.0.3",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.24.4"
+  }
+}

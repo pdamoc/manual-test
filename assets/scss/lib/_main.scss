@@ -1,0 +1,46 @@
+:root {
+  line-height: var(--ratio);
+  font-size: calc(0.333vw + 1em);
+  font-family: var(--font-plain);
+  background-color: var(--color-mid);
+  color: var(--color-dark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+  border-color: currentColor;
+}
+
+/* Hidden content */
+
+[hidden] {
+  display: none;
+}
+
+[hidden] + * {
+  margin-top: 0 !important;
+}
+
+/* Smooth scrolling */
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+div[role="page"] {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 1rem auto; 
+}
