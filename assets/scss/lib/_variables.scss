@@ -1,15 +1,29 @@
+ 
 :root {
   /* Fonts */
   --font-plain: 'Roboto Condensed', sans-serif;
   --font-special: 'Roboto Slab', serif; 
 
   /* Colors */
-  --color-dark: hsl(0, 0%, 2%);
+  --color-dark: #4D4D4C;
   --color-darkish: hsl(0, 0%, 25%);
   --color-lightish: hsl(0, 0%, 90%);
   --color-light: hsl(0, 0%, 98%);
   --color-mid: hsl(0, 0%, 50%);
 
+  --color-red: #C42740;
+
+  --color-orange: #E57937;
+  --color-orange-mid: #F1B786;
+  --color-orange-light: #FFF6ED;
+
+  --color-purple: #782E7A;
+  --color-purple-mid: #AD83AC;
+  --color-purple-light: #F6F0F3;
+
+  --color-green: #22A54D;
+  --color-green-mid: #D5E8CD;
+  --color-green-light: #F5F9F0;
 
 
   /* Scale */

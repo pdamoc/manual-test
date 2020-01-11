@@ -1,8 +1,9 @@
-
 /* Modular scale, colors, etc. */ 
 @import 'lib/variables'; 
-@import 'lib/material_colors'; 
 @import 'lib/main'; 
+
+/* Widgets */
+@import 'widgets/box'; 
 
 /* Utility classes */ 
 @import 'lib/helpers'; 

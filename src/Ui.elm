@@ -5,6 +5,29 @@ import Html.Attributes exposing (..)
 import Json.Encode as JEnc
 
 
+box { color, title, content } =
+    div [ role "box", attribute "data-color" color ]
+        [ h3 [] [ text title ]
+        , content
+        ]
+
+
+row =
+    div [ class "row" ]
+
+
+stack =
+    div [ class "stack" ]
+
+
+stackSmall =
+    div [ class "stack stack-small" ]
+
+
+strongText txt =
+    strong [] [ text txt ]
+
+
 role =
     attribute "role"
 
