@@ -1,11 +1,11 @@
 # Test Manual 
 
 
-# Prerequisites
+## Prerequisites
 
 `parcel` installed globally 
 
-# Getting Started 
+## Getting Started 
 
 To install: 
 
