@@ -64,6 +64,12 @@ page51Box1 =
                     , p [] [ span [ class "box-color" ] [ text "Planul dezvoltat de idei" ], text " cuprinde ideile principale și ideile secundare corespunzătoare acestora, în ordinea în care apar în text." ]
                     ]
             }
+        , box
+            { color = "green"
+            , title = "Repere"
+            , content =
+                p [] [ text " Lucrați în grupe de câte 4 – 5 elevi. Schițați o bandă desenată în care să surprindeți cele mai importante secvențe ale schiței ", em [] [ text "Vizită" ], text "...." ]
+            }
         ]
 
 
