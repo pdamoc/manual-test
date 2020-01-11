@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+    th, td { padding: var(--s-4); }
+ 
+    &[data-color="blue"] {
+        th {background-color: var(--color-blue-mid); color: #fff;}
+        td {background-color: var(--color-blue-mid-light);}
+    }   
+}

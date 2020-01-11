@@ -38,11 +38,12 @@ div[role="box"] {
         height: 100%;
     }
 
+
     /* Color Variations*/
 
     &[data-color="purple"] {
         h3{ color:#fff; background-color: var(--color-purple)}
-        :nth-child(2) { background-color: var(--color-purple-light);}
+        & > :nth-child(2) { background-color: var(--color-purple-light);}
         ol{li:before{ color: var(--color-purple); }}
         ul{li:before{ color: var(--color-purple-mid); }}
         .box-color { color: var(--color-purple); }
@@ -51,7 +52,7 @@ div[role="box"] {
     
     &[data-color="orange"] {
         h3{ color:#fff; background-color: var(--color-orange)}
-        :nth-child(2) { background-color: var(--color-orange-light);}
+        & > :nth-child(2) { background-color: var(--color-orange-light);}
         ol{li:before{ color: var(--color-orange); }}
         ul{li:before{ color: var(--color-orange-mid); }}
         .box-color { color: var(--color-orange); }
@@ -60,11 +61,20 @@ div[role="box"] {
 
     &[data-color="green"] {
         h3{ color:#fff; background-color: var(--color-green)}
-        :nth-child(2) { background-color: var(--color-green-light);}
+        & > :nth-child(2) { background-color: var(--color-green-light);}
         ol{li:before{ color: var(--color-green); }}
         ul{li:before{ color: var(--color-green-mid); }}
         .box-color { color: var(--color-green); }
         input[type="text"], textarea { background-color: var(--color-green-mid); }
+    }
+
+    &[data-color="blue"] {
+        h3{ color:#fff; background-color: var(--color-blue)}
+        & > :nth-child(2) { background-color: var(--color-blue-light);}
+        ol{li:before{ color: var(--color-blue); }}
+        ul{li:before{ color: var(--color-blue-mid); }}
+        .box-color { color: var(--color-blue); }
+        input[type="text"], textarea { background-color: var(--color-blue-mid); }
     }
 
 }
