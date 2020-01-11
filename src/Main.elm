@@ -57,6 +57,18 @@ page51Box1 =
 
 
 page51Box2 =
+    box
+        { color = "orange"
+        , title = "Repere"
+        , content =
+            div []
+                [ p [] [ span [ class "box-color" ] [ text "Ideile secundare" ], text " prezintă amănunte legate de ideea principală, completând-o." ]
+                , p [] [ span [ class "box-color" ] [ text "Planul dezvoltat de idei" ], text " cuprinde ideile principale și ideile secundare corespunzătoare acestora, în ordinea în care apar în text." ]
+                ]
+        }
+
+
+page51Box3 =
     let
         rowSpacer =
             row [ div [ style "height" "var(--s1)" ] [] ]
@@ -138,22 +150,10 @@ page51Box2 =
         }
 
 
-page51Box3 =
-    box
-        { color = "orange"
-        , title = "Repere"
-        , content =
-            div []
-                [ p [] [ span [ class "box-color" ] [ text "Ideile secundare" ], text " prezintă amănunte legate de ideea principală, completând-o." ]
-                , p [] [ span [ class "box-color" ] [ text "Planul dezvoltat de idei" ], text " cuprinde ideile principale și ideile secundare corespunzătoare acestora, în ordinea în care apar în text." ]
-                ]
-        }
-
-
 page51Box4 =
     box
         { color = "green"
-        , title = "Repere"
+        , title = "Provocări"
         , content =
             p [] [ text " Lucrați în grupe de câte 4 – 5 elevi. Schițați o bandă desenată în care să surprindeți cele mai importante secvențe ale schiței ", em [] [ text "Vizită" ], text "...." ]
         }

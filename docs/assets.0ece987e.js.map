@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["Elm","Main","init","node","document","querySelector"],"mappings":";;;AAEA,aAFA,IAAA,EAAA,QAAA,mBAEAA,EAAIC,IAAAA,KAAKC,KAAK,CAAEC,KAAMC,SAASC,cAAc","file":"assets.0ece987e.js","sourceRoot":"../assets","sourcesContent":["import { Elm } from '../src/Main.elm'\n\nElm.Main.init({ node: document.querySelector('main')})\n"]}
