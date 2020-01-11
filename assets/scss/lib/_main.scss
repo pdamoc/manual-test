@@ -112,6 +112,7 @@ header {
   margin-bottom: var(--s3); 
 
   :nth-child(1) {
+
     background-color: var(--color-purple);
     color: #fff;
   }  
@@ -127,7 +128,7 @@ header {
   }
 }
 
-div[role="page"][data-is-odd="true"] {
+div[role="page"][data-is-odd="false"] {
   header { 
     flex-direction: row-reverse;
     :nth-child(2) { text-align: right; }
