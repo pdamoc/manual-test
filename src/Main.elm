@@ -55,6 +55,15 @@ page51Box1 =
                         ]
                     ]
             }
+        , box
+            { color = "orange"
+            , title = "Repere"
+            , content =
+                div []
+                    [ p [] [ span [ class "box-color" ] [ text "Ideile secundare" ], text " prezintă amănunte legate de ideea principală, completând-o." ]
+                    , p [] [ span [ class "box-color" ] [ text "Planul dezvoltat de idei" ], text " cuprinde ideile principale și ideile secundare corespunzătoare acestora, în ordinea în care apar în text." ]
+                    ]
+            }
         ]
 
 
