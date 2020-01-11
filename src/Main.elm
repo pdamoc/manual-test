@@ -82,7 +82,7 @@ page51 =
                 ]
     in
     page
-        { isOdd = True
+        { isOdd = False
         , unit = "Unitatea II"
         , details = "De-a ce mă joc"
         , activity = "Lectură"

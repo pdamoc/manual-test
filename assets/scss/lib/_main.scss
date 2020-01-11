@@ -127,7 +127,7 @@ header {
   }
 }
 
-div[role="page"][data-is-odd] {
+div[role="page"][data-is-odd="true"] {
   header { 
     flex-direction: row-reverse;
     :nth-child(2) { text-align: right; }

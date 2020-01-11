@@ -57,7 +57,7 @@ pageHeader unit details activity =
 dataIsOdd : Bool -> Attribute msg
 dataIsOdd isOdd =
     if isOdd then
-        attribute "data-is-odd" ""
+        attribute "data-is-odd" "true"
 
     else
         attribute "data-is-odd" "false"
