@@ -57,6 +57,29 @@ page51Box1 =
 
 
 page51Box2 =
+    let
+        rowSpacer =
+            row [ div [ style "height" "var(--s1)" ] [] ]
+
+        firstColumn txt hasArrow =
+            div [ class "col-2 pr-0" ]
+                [ div
+                    [ classList [ ( "text-align:center height:100%", True ), ( "down-arrow-blue", hasArrow ) ]
+                    , style "color" "#fff"
+                    , style "background-color" "var(--color-orange-mid)"
+                    , style "padding" "var(--s0)"
+                    ]
+                    [ strongText txt ]
+                ]
+
+        blueBox =
+            div
+                [ class "height:100%"
+                , style "color" "var(--color-blue)"
+                , style "background-color" "var(--color-blue-mid-light)"
+                , style "padding" "var(--s0)"
+                ]
+    in
     box
         { color = "blue"
         , title = "Aplicații"
@@ -67,8 +90,37 @@ page51Box2 =
                         [ span []
                             [ text "Alcătuiește planul dezvoltat de idei, adăugând detalii pentru fiecare idee principală din planul simplu."
                             ]
-                        , div [ style "padding" "var(--s-1)", style "padding-left" "var(--s0)" ]
-                            []
+                        , div [ style "padding" "var(--s-1)", style "padding-left" "var(--s0)", style "margin-bottom" "var(--s0)" ]
+                            [ row
+                                [ div [ class "col-2 pr-0" ] []
+                                , div [ class "col-5 pl-0" ]
+                                    [ div [ class "text-align:center", style "color" "#fff", style "background-color" "var(--color-orange-mid)" ] [ strongText "Planul simplu de idei" ] ]
+                                , div [ class "col-5 text-align:center", style "color" "#fff", style "background-color" "var(--color-orange-mid)" ]
+                                    [ div [ class "text-align:center", style "color" "#fff", style "background-color" "var(--color-orange-mid)" ] [ strongText "Planul dezvoltat de idei" ] ]
+                                ]
+                            , row
+                                [ firstColumn "Situația inițială" True
+                                , div [ class "col-5 pl-0" ] [ blueBox [ text "Un domn vine în vizită la doamna Popescu cu ocazia onomasticii fiului ei." ] ]
+                                , div [ class "col-5 p-0" ]
+                                    [ blueBox
+                                        [ text "Un domn vine în vizită la doamna Popescu cu ocazia onomasticii fiului ei."
+                                        , span [ style "color" "var(--color-dark)" ] [ text " Musafirul îi oferă lui Ionel o minge și începe să discute cu gazda.." ]
+                                        ]
+                                    ]
+                                ]
+                            , rowSpacer
+                            , row
+                                [ firstColumn "Succesiunea de întâmplări" True
+                                , div [ class "col-5 pl-0" ] [ blueBox [] ]
+                                , div [ class "col-5 p-0" ] [ blueBox [] ]
+                                ]
+                            , rowSpacer
+                            , row
+                                [ firstColumn "Situația finală" False
+                                , div [ class "col-5 pl-0" ] [ blueBox [] ]
+                                , div [ class "col-5 p-0" ] [ blueBox [] ]
+                                ]
+                            ]
                         ]
                     , li []
                         [ span [] [ text "Evaluează planul dezvoltat al colegului/colegei de bancă, pe baza următoarelor criterii:" ]
