@@ -8,5 +8,17 @@ role =
     attribute "role"
 
 
-page =
-    div [ role "page" ]
+page odd =
+    if odd then
+        div [ role "page", isOdd ]
+
+    else
+        div [ role "page" ]
+
+
+textSpan txt =
+    span [] [ text txt ]
+
+
+isOdd =
+    attribute "data-is-odd" ""

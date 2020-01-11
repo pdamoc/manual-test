@@ -1,9 +1,12 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, button, div, text)
+import Html exposing (..)
 import Ui exposing (..)
 
 
 main =
-    page [ text "Hello" ]
+    page True
+        [ header [ isOdd ] [ textSpan "Unitatea II", textSpan "De-a ce mă joc", textSpan "Lectură" ]
+        , footer [] [ text "51" ]
+        ]
