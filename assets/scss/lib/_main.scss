@@ -1,5 +1,6 @@
 :root {
   line-height: var(--ratio); 
+  font-size: calc(0.333vw + 0.75em);
   font-family: var(--font-plain);
   background-color: var(--color-mid);
   color: var(--color-dark);
@@ -53,7 +54,7 @@ h4 {
 
 h1,
 .h1 {
-  font-size: var(--s4);
+  font-size: var(--s3);
 }
 h2,
 .h2 {
@@ -88,7 +89,8 @@ div[role="page"] {
   background-color: #fff;
   margin: 1rem auto;  
  
-  padding: var(--s3);
+  padding: var(--s1);
+
   position: relative;
 }
 
@@ -97,14 +99,14 @@ footer {
   font-size: var(--s1);
   font-weight: 700;
   color: var(--color-purple);
-  margin: calc( 0px - var(--s1)); 
+  margin: calc( 0px - var(--s3)); 
   margin-top:  var(--s3); 
 }
 
 header {
   display: flex;
   font-family: var(--font-special);
-  font-size: var(--s2);
+  font-size: var(--s1);
   span {
     padding: var(--s0);
   }
